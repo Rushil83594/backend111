@@ -1,0 +1,13 @@
+name = "brasa-verde-api"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "brasa-verde-db"
+database_id = "REPLACE_WITH_ID_FROM_wrangler_d1_create"
+migrations_dir = "migrations"
+
+[vars]
+# Set to your Cloudflare Pages URL in production, e.g. "https://brasa-verde.pages.dev"
+ALLOWED_ORIGIN = "*"
